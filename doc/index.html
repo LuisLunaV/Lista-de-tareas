@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <title>Lista de tareas</title>
+</head>
+<body>
+    <header class="pimary-header">
+    <h1 class="display-1 fw-bold">Lista de Tareas</h1>
+    </header>
+    <section class="container">   
+    <header id="container-header">
+        <h1>Pendientes</h1>
+        <input id="nueva-tarea" placeholder="Tarea nueva" autofocus>
+    </header>
+    <section id="principal">
+        <ul class="list-group font-monospace" id="lista-tareas">
+
+        </ul>
+        <label class="fw-bolder" id="pendientes">Tareas pendientes: <small id="numero">0</small></label>
+        <div class="list-group" id="buttons-filter">
+            <a class="btn btn-primary" id="todos">Todos</a>
+            <a class="btn btn-success" id="tareas-completado">Completados</a>
+            <a class="btn btn-warning" id="tareas-pendientes">Pendientes</a>
+        </div>
+    </section>
+    </section>
+  
+<script src="index.js" type="module"></script>  
+<script src="./js/componentes.js" type="module"></script>
+</body>
+</html>

@@ -1,0 +1,245 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background: linear-gradient(to top, #D0D3D4,#ECF0F1   );
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+input{
+    text-align: center;
+    border-radius: 5px;
+}
+
+.pimary-header h1{
+   color: #922B21 ;
+   text-shadow: rgba(0,0,0,.6) 4px 6px 5px;
+}
+.container{
+    overflow: hidden;
+    background-color: white;
+    box-shadow: 1px 2px 5px 7px rgba(0,0,0,.5);
+    width: 40%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.container #container-header{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.container #principal{
+    overflow: hidden;
+    width: 70%;
+    margin-top: 14px;
+    text-align: center;
+}
+.container #principal ul{
+    border-radius: 10px;
+}
+
+.container #principal ul li {
+    background-color:rgba(0,0,0,.1) ;
+
+}
+.container #principal ul li div{
+    display: flex;
+    flex-direction: row;
+justify-content: space-between;
+}
+
+#pendientes{
+    padding: 15px;
+}
+
+#buttons-filter{
+width: 100%;
+overflow: hidden;
+display:flex;
+flex-direction: row;
+justify-content: center;
+
+
+}
+
+#buttons-filter a{
+margin: 0px 2px 5px 2px;
+font-size: 0.9rem;
+ width: 120px;
+ height: auto;
+}
+
+.hiden{
+    display:none;
+}
+@media screen and (min-width:300px){
+    .pimary-header h1{
+        font-size: 2.9rem;
+        }
+        .container{
+            width: 100%;
+            height: auto;
+            border-radius: 0px;
+    box-shadow:none;
+
+        }
+        
+        .container #container-header{
+            height: auto;
+            text-align: center;
+        }
+        
+        .container #principal{
+           
+            width: 70%;
+            margin-top: 14px;
+           
+        }
+        .container #principal ul{
+            border-radius: 10px;
+        }
+     
+       
+        
+        #buttons-filter{
+        width: 100%;
+        flex-direction: column;
+align-items: center;
+        }
+        
+
+}
+@media screen and (min-width:435px){
+    .pimary-header h1{
+        font-size: 4rem;
+        }
+        .container{
+            width: 90%;
+            height: auto;
+    border-radius: 10px;
+    box-shadow: 1px 2px 5px 7px rgba(0,0,0,.5);
+
+        }
+        
+        .container #container-header{
+            height: auto;
+        }
+        
+        .container #principal{
+           
+            width: 70%;
+            margin-top: 14px;
+           
+        }
+        .container #principal ul{
+            border-radius: 10px;
+        }
+     
+        
+        #buttons-filter{
+        width: 100%;
+        flex-direction: row;
+
+        }
+
+}
+@media screen and (min-width:590px){
+    .pimary-header h1{
+        font-size: 5rem;
+        }
+        .container{
+            width: 70%;
+            height: auto;
+        }
+        
+        .container #container-header{
+            height: auto;
+        }
+        
+        .container #principal{
+           
+            width: 70%;
+            margin-top: 14px;
+           
+        }
+        .container #principal ul{
+            border-radius: 10px;
+        }
+        
+        #buttons-filter{
+        width: 100%;
+        }
+        
+}
+@media screen and (min-width:830px){
+
+    .pimary-header h1{
+ font-size: 5rem;
+ }
+ .container{
+     width: 50%;
+     height: auto;
+ }
+ 
+ .container #container-header{
+     height: auto;
+ }
+ 
+ .container #principal{
+    
+     width: 70%;
+     margin-top: 14px;
+    
+ }
+ .container #principal ul{
+     border-radius: 10px;
+ }
+ 
+ 
+ #buttons-filter{
+ width: 100%;
+ }
+ 
+ 
+ 
+}
+@media screen and (min-width:1030px){
+ 
+.pimary-header h1{
+ font-size: 5rem;
+ }
+ .container{
+     width: 40%;
+     height: auto;
+ }
+ 
+ .container #container-header{
+     height: auto;
+ }
+ 
+ .container #principal{
+    
+     width: 70%;
+     margin-top: 14px;
+    
+ }
+ .container #principal ul{
+     border-radius: 10px;
+ }
+ 
+ #buttons-filter{
+ width: 100%;
+ }
+    
+}
