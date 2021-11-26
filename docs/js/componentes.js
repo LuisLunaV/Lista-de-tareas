@@ -1,4 +1,4 @@
-import {tareas, guardarLocalStorage,objetTarea,eliminarLocalStorage ,contarPendienteLocal, estadoPendientesLocal,filtrarCompletados,filtrarPendientes } from "../js/index.js"; 
+import {tareas, guardarLocalStorage,objetTarea,eliminarLocalStorage ,contarPendienteLocal, estadoPendientesLocal,filtrarCompletados,filtrarPendientes } from "./index.js"; 
        
 export const lista       = document.querySelector('#lista-tareas'),
              textBox     = document.querySelector('#nueva-tarea'),

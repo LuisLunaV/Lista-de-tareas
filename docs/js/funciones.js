@@ -1,4 +1,4 @@
-import { ulLista } from "../js/index.js";
+import { ulLista } from "./index.js";
 
 
 export let   tareas = JSON.parse(localStorage.getItem('tarea')) || [];
