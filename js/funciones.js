@@ -42,36 +42,38 @@ export const contarPendienteLocal =()=>{ //Funcion que nos indicara la cantidad 
    
 }
 
-export const estadoPendientesLocal =( )=>{
+export const estadoPendientesLocal =( )=>{//Esta funcion nos permite actualizar la propiedad de completado dentro del objeto tanto a {tarea:'tarea', compleado: false} o {tarea:'tarea', compleado: true}. 
 
     let labelText = event.path[1].childNodes[3];//Esta variable nos señala el elemento 'Label' dentro del li>div.
 
-    tareas = tareas.map(( arr )=>{
+    tareas = tareas.map(( arr )=>{//Recorremos el arreglo de las tareas guardadas con el metodo .map().
 
-        if(arr.tarea == labelText.innerText){
+        if(arr.tarea == labelText.innerText){//Si, la propiedad tarea=>'nombre', es igual al texto de la etiqueta label.
    
-          arr.completado = !arr.completado;  
+          arr.completado = !arr.completado; //el valor de 'completado' va a ser igual a lo contrario de lo que 'completado' actualmente tiene. El valor es un boleano: true o false.  
           
-          return arr;
+          return arr; //Regreso el arreglo con el nuevo valor fuera del 'if'.
            
         }
-        return arr;
+        return arr;//Regreso el arreglo con el nuevo valor fuera de 'map'.
       })
 
       guardarLocalStorage( tareas )
 
 }
 
+//La clase 'hiden' se encuentra en el archivo styles.css 'hiden:{ display: none }' el cual nos ayudara a ocultar las etiquetas a las cual esta clase se agregue.
+
 export const filtrarCompletados =( filt )=>{
-   
-    if(!filt.classList.contains('completado')){ //filt.classList.contains('completado')==false
-        filt.classList.add('hiden');
+ //Si estas etiquetas 'NO' cuentan con la clase 'completados'.
+   if(!filt.classList.contains('completado')){ //filt.classList.contains('completado')==false
+        filt.classList.add('hiden'); //Ocultar estas etiquetas 'li'.
     }    
 }
 
 export const filtrarPendientes =(filt)=>{ 
-     
+//Si estas etiquetas cuentan con la clase 'completados'.
     if(filt.classList.contains('completado')){//filt.classList.contains('completado')==true
-        filt.classList.add('hiden');
+        filt.classList.add('hiden');//Ocultar estas etiquetas 'li'.
     }
 }
