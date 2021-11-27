@@ -50,7 +50,7 @@ input{
 }
 
 .container #principal ul li {
-    background-color:rgba(0,0,0,.1) ;
+    background-color:rgba(0,0,0,.1);
 
 }
 .container #principal ul li div{
@@ -84,6 +84,9 @@ font-size: 0.9rem;
     display:none;
 }
 @media screen and (min-width:300px){
+    label{
+        font-size: .78rem;
+    }
     .pimary-header h1{
         font-size: 2.9rem;
         }
@@ -101,12 +104,12 @@ font-size: 0.9rem;
         }
         
         .container #principal{
-           
-            width: 70%;
+            width: auto;
             margin-top: 14px;
            
         }
         .container #principal ul{
+            width: auto;
             border-radius: 10px;
         }
      
@@ -230,11 +233,12 @@ align-items: center;
  
  .container #principal{
     
-     width: 70%;
+     width: auto;
      margin-top: 14px;
     
  }
  .container #principal ul{
+     width: auto;
      border-radius: 10px;
  }
  
