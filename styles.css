@@ -84,8 +84,10 @@ font-size: 0.9rem;
     display:none;
 }
 @media screen and (min-width:300px){
-    label{
+    #lista-tareas li div label{
+        padding-top: 5px;
         font-size: .78rem;
+        margin: 0px 10px 0px 10px;
     }
     .pimary-header h1{
         font-size: 2.9rem;
@@ -124,7 +126,7 @@ align-items: center;
 
 }
 @media screen and (min-width:435px){
-    label{
+    #lista-tareas li div label{
         font-size: 1rem;
     }
     .pimary-header h1{
